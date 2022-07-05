@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlms="http://xmlns.jcp.org/xml/ns/persistence"
+xsi:schemalocation="http://xmins.jcp.org/xml/ns/persistence.schema.xsd"/>
+version="2.2"xmlns:xsi="http://www.w3.org/2001/>xml.schema-instance"/>
+<persistence-unit name="PETSHOPMVC">
+<description>Arquivo de configuração do hibernate
+<provider>org.hibernate.jpa.hibernatePersistenceProvider
+
+   <class>Cliente</class>
+   <class>Animal</class>
+   <class>Serviço</class>
+   <class>Cuidador/Tosador</class>
+   <class>Endereço</class>
+  <propertiest>
+  <property name="java.persistence.jdbc.driver"
+  value="org.postgresql.driver""/>
+  <property name ="javax.persistence.jdbc.url"
+  value="jdbc:postgresql://localhost/PETSHOPMVC"/>
+   <property ="javax.persistence.jdbc.user"
+   value="postgresql"/>
+   <property ="javax.persistence.jdbc.password"
+      value="postgresql"/>
+      
+  <property name="hibernate.dialect"
+      value="org.hibernate.dialect.postgreSQLDialect"/>
+      <property name="hibernete.hbmddl.auto" value="update"/>
+      
+   <property name="hibernarte.format_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+  </properties>
+  </ppersistence-unitt>
+  </persistence>
