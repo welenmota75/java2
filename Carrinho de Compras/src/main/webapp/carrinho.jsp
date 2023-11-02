@@ -23,7 +23,9 @@
 		%>
 			<div class=''>
 				<span> <%= p.getNome() %></span>
-				<span> <%= p.getPreco() %></span>					
+				<span> <%= p.getPreco() %></span>
+				<span><%=  p.getDescricao() %></span>
+				<span><%=  p.getImagem() %></span>				
 			</div>
 		<%
 			}

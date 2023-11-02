@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Extra.com.br</title>
+<title>super mercado</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
@@ -17,9 +17,9 @@
 		}
 		
 		if( session.getAttribute("lista") == null ){
-			Produto p1 = new Produto("Relogio Polar", "relogio fitness", 2000.00, "polar.png");
-			Produto p2 = new Produto("Iphone 15", "celular", 5500.00, "iphone.png");
-			Produto p3 = new Produto("Nike", "tenis", 1000.00, "nike.png");
+			Produto p1 = new Produto("pela.jpeg", "skincare.jpeg", 2000.00, "repelente.jpeg");
+			Produto p2 = new Produto("gilette.jpeg", "moko.jpeg", 5500.00, "images.jpeg");
+			Produto p3 = new Produto("produtol.jpeg", "indice.jpeg", 1000.00, "produtouso.jpeg");
 			
 			ArrayList<Produto> lista = new ArrayList<Produto>();
 			lista.add(p1);
@@ -42,10 +42,14 @@
 				<div class='linha-produto'>
 					<div><%= p.getNome() %></div>
 					<div><%= p.getPreco() %></div>
+					<div><%= p.getDescricao() %></div>
+					<div><%= p.getImagem() %></div>
 					<div><img src="images/<%=p.getImagem() %>" /></div>
 				</div>
 				 <input type="hidden" name="produto" value='<%=p.getNome()%>'>
 				 <input type="submit" value='Comprar'>
+				  <input type="hidden" name="produto" value='<%=p.getNome()%>'>
+				
 			</form>
 		<%
 			}
